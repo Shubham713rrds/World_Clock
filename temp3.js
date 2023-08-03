@@ -11,7 +11,7 @@ function updateAnAlarm() {
 //   console.log(alarmhour, alarmmin, curhrs, curmin);
   if (curhrs == alarmhour && curmin == alarmmin) {
     let audiourl =
-      "https://file-examples.com/storage/fe56bbd83564ad7489ca047/2017/11/file_example_MP3_700KB.mp3";
+      "audio.mp3";
     var audio = new Audio(audiourl);
     audio.play();
   }
