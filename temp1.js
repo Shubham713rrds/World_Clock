@@ -41,7 +41,7 @@ function upadateAnalogClock(time, logic) {
 
   // getValue(hrs, min);
   if (Math.floor(hrs) == Math.floor(alarmhour) && min == alarmmin) {
-    let audiourl ="https://file-examples.com/storage/fef732a75f64cbb8f9b56c3/2017/11/file_example_MP3_700KB.mp3";
+    let audiourl ="audio.mp3";
     var audio = new Audio(audiourl);
     audio.play();
   }
