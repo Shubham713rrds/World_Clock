@@ -11,6 +11,7 @@ let usaA = function () {
 };
 
 function upadateAnalogClock(time, logic) {
+  // console.log(time);
   let dayNight = time.split(" ")[1];
   let hrs = time.split(":")[0];
   let min = time.split(":")[1];
@@ -38,11 +39,9 @@ function upadateAnalogClock(time, logic) {
   m.style.transform = `rotate(${mrotation}deg)`;
   s.style.transform = `rotate(${srotation}deg)`;
 
-  getValue(hrs, min);
-
-  if (hrs == alarmhour && min == alarmmin) {
-    let audiourl =
-      "https://file-examples.com/storage/fe56bbd83564ad7489ca047/2017/11/file_example_MP3_700KB.mp3";
+  // getValue(hrs, min);
+  if (Math.floor(hrs) == Math.floor(alarmhour) && min == alarmmin) {
+    let audiourl ="https://file-examples.com/storage/fef732a75f64cbb8f9b56c3/2017/11/file_example_MP3_700KB.mp3";
     var audio = new Audio(audiourl);
     audio.play();
   }
@@ -92,10 +91,10 @@ const updateTime2 = () => {
 
 setInterval(updateTime2, 1000);
 
-export function getValue(hrs, min) {
-    //  console.log(hrs, min);
-     return {hrs, min};
-}
+// export function getValue(hrs, min) {
+//     //  console.log(hrs, min);
+//      return {hrs, min};
+// }
 
 
 // module.exports = getValue;
