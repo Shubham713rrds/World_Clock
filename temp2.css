@@ -1,0 +1,57 @@
+#foot{
+    position: relative;
+    top: 100vh;
+    width: 100%;
+    border: 5px solid red;
+    /* border-width: 5px;
+    border-style: solid;
+    border-color: red;
+     */
+}
+
+.clockcontainer{
+    position: relative;
+    margin:auto;
+    /* border: 2px solid red; */
+    height:17vw;
+    width: 16vw;
+    /* height:440px;
+    width: 440px; */
+    background:url(clock.jpg) no-repeat;
+    background-size: 100%;
+ 
+}
+
+.hour, .minutes, .second{
+    position: absolute;
+    background:black;
+    border-radius: 10px;
+    transform-origin: bottom;  /* changes the center of clock needle */
+}
+
+.hour{
+    /* width: 6px; */
+    width: 2%;
+    /* height: 70px; */
+    height: 19%;
+    top: 28%;
+    left: 49%;
+    opacity: 0.8;
+    /* display: none; */
+}
+.minutes{
+    width: 1%;
+    height: 30%;
+    top: 17%;
+    left: 49.5%;
+    opacity: 0.8;
+    /* display: none; */
+}
+.second{
+    width: 1%;
+    height: 35%;
+    top: 12%;
+    left: 49.5%;
+    opacity: 0.8;
+    /* display: none; */
+}
